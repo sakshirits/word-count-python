@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count-Result</title>
+</head>
+<body>
+<h2> The total no of words are:</h2>
+{{ count }}
+<h2> The text is:
+{{fulltext}}
+</h2>
+<h3> The count for each words is given as:</h3>
+{% for word, wordcount in Worddictionary %}
+{{word}} => {{wordcount}}
+<br> </br>
+{% endfor %}
+</body>
+</html>
